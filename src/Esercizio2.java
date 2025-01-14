@@ -43,8 +43,7 @@ public class Esercizio2 {
          }
     }
 
-
-
+    
     public static void main(String[] args){
         List<Integer> numeriCasuali = listaNumeri();
         System.out.println("Numeri casuali generati:" + numeriCasuali);
@@ -57,8 +56,6 @@ public class Esercizio2 {
         booleanList(true, numeriCasuali);
         System.out.println("Numeri nelle posizioni dispari della lista numeriCasuali:");
         booleanList(false, numeriCasuali);
-
-
     }
 }
 
