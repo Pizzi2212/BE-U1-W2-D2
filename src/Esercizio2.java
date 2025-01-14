@@ -21,13 +21,30 @@ public class Esercizio2 {
     public static List<Integer> listaNumeri2 (List<Integer> numeriCasuali){
         List<Integer> numeriCasualiReverse = new ArrayList<>(numeriCasuali);
 
-        for(int i = numeriCasuali.size() - 1 ; i>=0;i-- ){
+        for(int i = numeriCasuali.size() - 1 ; i>=0;i--){
             numeriCasualiReverse.add(numeriCasuali.get(i));
         }
         return numeriCasualiReverse;
     }
+    public static void booleanList (boolean x,List<Integer>lista){
+        int y = 0;
+        for(Integer intero : lista){
+             y++;
+             System.out.println(intero);
+             if(x){  // se è true
+                  if(y % 2 == 0){ // ed è pari
+                      System.out.println(intero); // lo stampo
+                  }
+             }
+             else { // se è false
+                 if (y % 2 != 0) {
+                     System.out.println(intero);
+                 }
+             }
+         }
+    }
 
- 
+
 
     public static void main(String[] args){
         List<Integer> numeriCasuali = listaNumeri();
