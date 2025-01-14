@@ -30,7 +30,6 @@ public class Esercizio2 {
         int y = 0;
         for(Integer intero : lista){
              y++;
-             System.out.println(intero);
              if(x){  // se è true
                   if(y % 2 == 0){ // ed è pari
                       System.out.println(intero); // lo stampo
@@ -53,6 +52,12 @@ public class Esercizio2 {
         List<Integer> numeriCasualiReverse = listaNumeri2(numeriCasuali);
         System.out.println("Numeri casuali seguiti da numeri in ordine inverso:");
         System.out.println(numeriCasualiReverse);
+
+        System.out.println("Numeri nelle posizioni pari della lista numeriCasuali:");
+        booleanList(true, numeriCasuali);
+        System.out.println("Numeri nelle posizioni dispari della lista numeriCasuali:");
+        booleanList(false, numeriCasuali);
+
 
     }
 }
